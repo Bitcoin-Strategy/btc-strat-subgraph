@@ -1,0 +1,24 @@
+{
+  "name": "btc-strat-subgraph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "sync": "node scripts/sync.mjs",
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "test": "graph test --version 0.6.0",
+    "test:wasm": "node --test tests/wasm-runtime.test.mjs",
+    "check": "npm run codegen && npm run build && npm run test:wasm && npm test",
+    "health": "node scripts/health.mjs",
+    "deploy:goldsky": "npm run check && goldsky subgraph deploy",
+    "create-local": "graph create --node http://localhost:8020/ mstrx",
+    "remove-local": "graph remove --node http://localhost:8020/ mstrx",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 mstrx"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.98.1",
+    "@graphprotocol/graph-ts": "0.38.2"
+  },
+  "devDependencies": {
+    "matchstick-as": "0.6.0"
+  }
+}
