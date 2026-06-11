@@ -1,0 +1,12 @@
+"One point of the backing curve per block in which the Treasury balances changed."
+type NavPoint @entity(immutable: false) {
+  "Block number."
+  id: ID!
+  timestamp: BigInt!
+
+  "Treasury BTC per backing STRAT, 18 decimals."
+  navBtcPerStratWad: BigInt!
+
+  "Oracle price, 18 decimals. Null until the pool has a full TWAP window."
+  marketBtcPerStratWad: BigInt
+}
