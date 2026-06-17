@@ -1,0 +1,8 @@
+{
+  "robinhood-mainnet": {
+    "Treasury": {
+      "address": "0x4a6c9f1b41d9c77f14600c85bcb92c984642444a",
+      "startBlock": 86651208
+    }
+  }
+}
