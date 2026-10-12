@@ -1,6 +1,6 @@
 {
   "name": "btc-strat-subgraph",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "sync": "node scripts/sync.mjs",
     "codegen": "graph codegen",

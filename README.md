@@ -32,3 +32,7 @@ goldsky subgraph tag create btc/<version> --tag prod
 ```
 
 Endpoint: `https://api.goldsky.com/api/public/project_cmp4213fdupdk01zh59u6dv3f/subgraphs/btc/prod/gn`
+
+## License
+
+[MIT](LICENSE)
